@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: bank
+  mongodb:
+    uri: mongodb://localhost:27017/exp_bank
+server:
+  port: 8082
