@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: gatewayserver
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: false
+              lowerCaseServiceId: true
+
+server:
+  port: 9002
