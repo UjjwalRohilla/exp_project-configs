@@ -33,4 +33,5 @@ info:
     name: "bank"
     description: "experiment microservice with a dummy topic bank"
     version: "v1"
+    precaution: "don't add in your main project, this is just for learning purpose"
 
