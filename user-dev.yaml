@@ -15,3 +15,23 @@ eureka:
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:9001/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      access: unrestricted
+  info:
+    env:
+      enabled: true
+
+
+info:
+  app:
+    name: "user"
+    description: "experiment microservice with a dummy topic user"
+    version: "v1"
+    precaution: "don't add in your main project, this is just for learning purpose"
