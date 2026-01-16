@@ -14,3 +14,23 @@ eureka:
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:9001/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      access: unrestricted
+  info:
+    env:
+      enabled: true
+
+
+info:
+  app:
+    name: "bank"
+    description: "experiment microservice with a dummy topic bank"
+    version: "v1"
+
